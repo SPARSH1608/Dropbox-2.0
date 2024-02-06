@@ -49,7 +49,6 @@ export const columns: ColumnDef<FileType>[] = [
           <FileIcon
             extension={extension}
             labelColor={COLOR_EXTENSION_MAP[extension]}
-            {...defaultStyles[extension]}
           />
         </div>
       );
