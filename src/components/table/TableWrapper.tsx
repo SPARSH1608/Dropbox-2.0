@@ -11,7 +11,7 @@ import { db } from '@/firebase';
 import { Skeleton } from '@/components/ui/skeleton';
 const TableWrapper = ({ skeletonFiles }: { skeletonFiles: FileType[] }) => {
   const { isLoaded, isSignedIn, user } = useUser();
-  console.log(user?.id);
+  // console.log(user?.id);
   const [initialfiles, setInitialFiles] = useState<FileType[]>([]);
   const [sort, setSort] = useState<'asc' | 'desc'>('desc');
 
@@ -22,7 +22,7 @@ const TableWrapper = ({ skeletonFiles }: { skeletonFiles: FileType[] }) => {
         orderBy('Timestamp', sort)
       )
   );
-  console.log(docs);
+  // console.log(docs);
   useEffect(() => {
     if (!docs) return;
 

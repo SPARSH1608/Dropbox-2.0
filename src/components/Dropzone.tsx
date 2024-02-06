@@ -18,7 +18,7 @@ import toast, { Toaster } from 'react-hot-toast';
 const DropzoneComponent = () => {
   const maxSize = 20971520;
   const { isLoaded, isSignedIn, user } = useUser();
-  console.log(user);
+  // console.log(user);
 
   const [loading, setLoading] = useState(false);
 
@@ -29,7 +29,7 @@ const DropzoneComponent = () => {
       reader.onerror = () => console.log('File reading has failed');
       reader.onload = async () => {
         await uploadPost(file);
-        console.log('Upload');
+        // console.log('Upload');
       };
       reader.readAsArrayBuffer(file);
     });

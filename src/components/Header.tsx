@@ -8,7 +8,7 @@ import { ThemeToggler } from './ThemeToggler';
 
 const Header = () => {
   return (
-    <header className="flex items-center justify-between">
+    <header className="flex items-center justify-between my-3 pl-5 pr-8">
       <Link href="/" className="flex items-center space-x-3">
         <div className="w-fit">
           {' '}
@@ -21,7 +21,7 @@ const Header = () => {
         </div>
         <h1 className="font-bold text-2xl">DropBox</h1>
       </Link>
-      <div className="px-5 flex space-x-2 items-center text-xl">
+      <div className="flex items-center space-x-4 text-lg">
         {/* Theme toggler*/}
         <ThemeToggler />
         <UserButton afterSignOutUrl="/" />
