@@ -15,11 +15,15 @@ import { Switch } from '@/components/ui/switch';
 type CardProps = React.ComponentProps<typeof Card>;
 
 export function CardWrapper({ className, ...props }: CardProps) {
-  const notifications = props.notification;
-  const title = props.title;
-  const desc = props.desc;
+  //   console.log(props);
+  const notifications = props.props.titleName;
+  const title: string = props.props.title;
+  const desc: string = props.props.desc;
+  //   console.log('title', title);
+  //   console.log('desc', desc);
+
   return (
-    <Card className={cn('w-[380px] bg-[#6c6c6c17]', className)} {...props}>
+    <Card className={cn('w-[380px] bg-[#24242417]', className)} {...props}>
       <CardHeader>
         <CardTitle>{title}</CardTitle>
         <CardDescription>{desc}</CardDescription>
