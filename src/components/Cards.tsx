@@ -64,9 +64,12 @@ const data = [
 
 export function CardWrapper() {
   return (
-    <div className="flex gap-2 p-5 justify-between w-3/4 mx-auto items-start mt-5">
+    <div className="flex flex-col gap-y-10  justify-between w-3/4 mx-auto items-start mt-5 lg:flex-row  lg:gap-5 ">
       {data.map((item, index) => (
-        <Card key={index} className={cn('w-[380px] bg-[#24242417]')}>
+        <Card
+          key={index}
+          className={cn('w-[320px] md:w-[380px] bg-[#24242417]')}
+        >
           <CardHeader>
             <CardTitle>{item.title}</CardTitle>
             <CardDescription>{item.desc}</CardDescription>
