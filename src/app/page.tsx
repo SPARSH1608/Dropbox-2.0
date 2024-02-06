@@ -5,53 +5,6 @@ import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const notifications1 = {
-  title: 'Essentials',
-  desc: '$18 / month',
-  titleName: [
-    { title: 'User: 1 user' },
-    { title: 'Storage: 3 TB of storage' },
-    { title: 'Large file delivery: up to 100 GB' },
-    { title: 'File restoration: 180 days to restore deleted files' },
-    { title: 'File engagement tracking: Track file engagement' },
-    { title: 'Signature requests: Unlimited signature requests' },
-    { title: 'PDF editing: PDF editing' },
-    { title: 'Video editing: Record, review, and edit video' },
-  ],
-};
-const notifications2 = {
-  title: 'Business',
-  desc: '$20 / user / month',
-  titleName: [
-    { title: 'Users: 3+ users' },
-    { title: 'Storage: Starts at 9 TB for the team' },
-    { title: 'Large file delivery: up to 100 GB' },
-    { title: 'File restoration: 180 days to restore deleted files' },
-    { title: 'File engagement tracking: Track file engagement' },
-    { title: 'Signature requests: Unlimited signature requests' },
-    { title: 'PDF editing: PDF editing' },
-    { title: 'Video editing: Record, review, and edit video' },
-    { title: 'Admin setup: Set up admins' },
-    { title: 'Content monitoring: Know what content is shared' },
-  ],
-};
-const notifications3 = {
-  title: 'Business Plus',
-  desc: '$26 / user / month',
-  titleName: [
-    { title: 'Users: 3+ users' },
-    { title: 'Storage: Starts at 15 TB for the team' },
-    { title: 'Large file delivery: up to 250 GB' },
-    { title: 'File restoration: 1 year to restore deleted files' },
-    { title: 'File engagement tracking: Track file engagement' },
-    { title: 'Signature requests: Unlimited signature requests' },
-    { title: 'PDF editing: PDF editing' },
-    { title: 'Video editing: Record, review, and edit video' },
-    { title: 'Admin setup: Set up tiered admin roles' },
-    { title: 'Suspicious activity alerts: Suspicious activity alerts' },
-    { title: 'Compliance tracking: Compliance tracking' },
-  ],
-};
 export default function Home() {
   return (
     <main>
@@ -87,10 +40,8 @@ export default function Home() {
       </div>
       <div className="m-10 pt-2 rounded-xl">
         <h1 className="font-bold text-5xl text-center mt-16 ">Plans</h1>
-        <div className="flex gap-2 p-5 justify-between w-3/4 mx-auto items-start mt-5">
-          <CardWrapper props={notifications1} />
-          <CardWrapper props={notifications2} />
-          <CardWrapper props={notifications3} />
+        <div className="">
+          <CardWrapper />
         </div>
       </div>
 
